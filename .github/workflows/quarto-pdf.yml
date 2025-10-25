@@ -26,15 +26,6 @@ jobs:
           quarto install tinytex --no-prompt
           echo "$HOME/.TinyTeX/bin/x86_64-linux" >> $GITHUB_PATH
 
-      - name: Add TinyTeX to PATH and install fonts
-        shell: bash
-        run: |
-          export PATH="$HOME/.TinyTeX/bin/x86_64-linux:$PATH"
-          which tlmgr
-          tlmgr --version
-          tlmgr install collection-fontsrecommended
-          tlmgr install tex-gyre
-
       - name: Verify installation
         run: |
           export PATH="$HOME/.TinyTeX/bin/x86_64-linux:$PATH"
