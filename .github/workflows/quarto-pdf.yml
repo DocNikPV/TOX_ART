@@ -24,13 +24,13 @@ jobs:
       - name: Install TinyTeX (for PDF)
         run: |
           quarto install tinytex --no-prompt
-          tlmgr install xcolor geometry ulem hyperref babel babel-english fancyhdr sectsty titlesec caption fontspec setspace enumitem tocloft ifmtarg
+          echo "$HOME/.TinyTeX/bin/x86_64-linux" >> $GITHUB_PATH
 
       - name: Verify installation
         run: |
           quarto check install
           quarto --version
-          which xelatex || echo "XeLaTeX not found"
+          which xelatex
 
       - name: Render PDF
         run: quarto render --to pdf
