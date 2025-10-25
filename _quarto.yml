@@ -5,18 +5,15 @@ project:
 book:
   title: "Toxicology in Art"
   author: "Nik Danilov"
-  year: "2025"
-
+  date: "2025-10-25"
   chapters:
     - index.qmd
     - preface.qmd
     - part: "Fabules"
       chapters:
         - fabules/Sophonisba.qmd
-    - references.qmd
 
-sidebar:
-  collapse-level: 1
+  page-navigation: true
 
 format:
   html:

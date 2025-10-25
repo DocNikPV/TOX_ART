@@ -1,40 +1,40 @@
-Toxicology in Art (ToxArt)
-===========================
+# Toxicology in Art (ToxArt)
 
 **Year:** 2025  
 **Type:** Quarto book (HTML & PDF)  
-**Repository:** [Tox_Art](https://github.com/DocNikPV/tox-art)
+**Repository:** [Tox_Art](https://github.com/DocNikPV/TOX_ART)
 
 ---
 
 ## The project concept
 
-*Toxicology in Art* is an art-book exploring the intersection between **visual art** and **toxicology** — paintings, drawings, and engravings that depict, allude to, or symbolize **poisonings, toxins, or adverse drug effects**.
+_Toxicology in Art_ is an art-book exploring the intersection between **visual art** and **toxicology** — paintings, drawings, and engravings that depict, allude to, or symbolize **poisonings, toxins, or adverse drug effects**.
 
-Each artist page presents:
-- A **high-quality image** of the artwork and its **author** and **name**
-- A brief **toxicological commentary** describing the subject or its historical medical context  
+Each chapter presents:
+
+- A brief historical-narrative **fabule** about the person/place depicted, as well as a relevant **medico-toxicological commentary**.
+- A **high-quality image** of the artwork and its **author** and **name**.
 
 ## The project structure
 
-Tox_Art/
-│
-├── artworks/ # Individual artist pages (.qmd)
-│ ├── caroto.qmd
+ToxArt/
+├── \_quarto.yml
+├── index.qmd
+├── preface.qmd
+├── references.qmd
+├── chapters/
+│ └── Sophonisba.qmd
+├── images/
+│ └── Brouwer_Sophonisba.jpg
 │ └── ...
-│
-├── images/ # Artwork images used across the book
-│
-├── styles/ # Custom SCSS theme and visual assets
-│
-├── _quarto.yml # Main Quarto configuration (book metadata, structure)
-├── index.qmd # Preface / introduction page
-├── intro.qmd # General introduction
-├── gallery.qmd # Artists index (auto-generated gallery of artworks)
-├── summary.qmd # Summary and reflections
-├── cover.png # Book cover
-├── README.md # This file
-└── Tox_Art.Rproj # RStudio project configuration
+├── styles/
+│ └── custom.scss ← optional, for custom CSS theme
+├── .github/
+│ └── workflows/
+│ └── quarto-publish.yml ← GitHub Actions workflow
+├── .gitignore
+├── LICENSE
+└── README.md
 
 ## Rendering and publishing
 

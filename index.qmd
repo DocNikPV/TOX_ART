@@ -1,6 +1,7 @@
 ---
 title: "Toxicology in Art"
+subtitle: "An inquiry into death, beauty, and poison"
 author: "Nik Danilov"
 ---
 
-Welcome to *Toxicology in Art* — an exploration of poisons, art, and reason.
+Welcome to *Toxicology in Art* — a digital collection of tragic fables, where toxicology meets history and painting.

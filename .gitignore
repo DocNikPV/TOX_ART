@@ -1,2 +1,6 @@
-/.quarto/
+_book/
+.Rhistory
+.RData
 .Rproj.user
+.DS_Store
+*.log
