@@ -14,7 +14,7 @@ book:
 
 format:
   pdf:
-    pdf-engine: xelatex
+    pdf-engine: pdflatex
     documentclass: scrbook
     papersize: a4
     fontsize: 14pt
