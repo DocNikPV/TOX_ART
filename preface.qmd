@@ -1,0 +1,6 @@
+---
+title: "Preface"
+format: html
+---
+
+This book was built entirely in **Quarto** using **Julia**, from the Windows command line.

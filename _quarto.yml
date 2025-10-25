@@ -1,0 +1,27 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Toxicology in Art"
+  author: "Nik Danilov"
+  year: "2025"
+
+  chapters:
+    - index.qmd
+    - preface.qmd
+    - part: "Fabules"
+      chapters:
+        - fabules/Sophonisba.qmd
+    - references.qmd
+
+sidebar:
+  collapse-level: 1
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+  pdf:
+    documentclass: scrbook
