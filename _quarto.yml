@@ -11,7 +11,7 @@ book:
     - preface.qmd
     - part: "Fabules"
       chapters:
-        - fabules/Sophonisba.qmd
+        - chapters/Sophonisba.qmd
 
   page-navigation: true
 
