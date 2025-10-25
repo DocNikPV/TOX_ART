@@ -18,7 +18,7 @@ format:
     documentclass: scrbook
     papersize: a4
     fontsize: 14pt
-    mainfont: "Times New Roman"
+    mainfont: "Latin Modern Roman"
     geometry:
       - top=2.5cm
       - bottom=2.5cm
