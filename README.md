@@ -1,4 +1,4 @@
-Toxicology in Art (Tox_Art)
+Toxicology in Art (ToxArt)
 ===========================
 
 **Year:** 2025  
