@@ -4,19 +4,26 @@ project:
 
 book:
   title: "Toxicology in Art"
+  subtitle: "Poisoning and poisons in history and painting"
   author: "Nik Danilov"
-  date: "2025-10-25"
+  date: "2025"
   chapters:
     - index.qmd
     - preface.qmd
-    - part: "Fabules"
-      chapters:
-        - chapters/Sophonisba.qmd
-
-  page-navigation: true
+    - chapters/Sophonisba.qmd
 
 format:
-  html:
-    theme: cosmo
+  pdf:
+    pdf-engine: xelatex
+    documentclass: scrbook
+    papersize: a4
+    fontsize: 14pt
+    mainfont: "Georgia"
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=2.5cm
+      - right=2.5cm
     toc: true
     number-sections: true
+    colorlinks: true
