@@ -21,10 +21,13 @@ jobs:
         with:
           version: "1.5.57"
 
-      - name: Install TinyTeX (for PDF)
+      - name: Install TinyTeX and required fonts
         run: |
           quarto install tinytex --no-prompt
           echo "$HOME/.TinyTeX/bin/x86_64-linux" >> $GITHUB_PATH
+          # Install TeX Gyre and other basic fonts
+          tlmgr install collection-fontsrecommended
+          tlmgr install tex-gyre
 
       - name: Verify installation
         run: |
