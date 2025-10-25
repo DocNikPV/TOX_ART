@@ -1,7 +1,24 @@
 ---
 title: "Toxicology in Art"
-subtitle: "An inquiry into death, beauty, and poison"
+subtitle: "Poisoning and poisons in history and painting"
 author: "Nik Danilov"
 ---
 
-Welcome to *Toxicology in Art* — a digital collection of tragic fables, where toxicology meets history and painting.
+<div style="page-break-after: always; text-align: justified; font-family: Georgia; font-size: 10pt; margin-top: 6cm;">
+
+© 2025 Nik Danilov  
+All rights reserved.
+
+<br><br>
+
+**ISBN:** [to be assigned]  
+**DOI:** [to be assigned]  
+
+<br><br>
+
+Haifa, Israel  
+First digital edition, 2025
+
+</div>
+
+Welcome to *Toxicology in Art* — a digital collection of stories, where toxicology meets history and painting.
