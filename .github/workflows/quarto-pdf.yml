@@ -1,0 +1,36 @@
+name: Render Quarto PDF
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "1.5.57"
+
+      - name: Install TinyTeX (for PDF)
+        run: quarto install tinytex --no-prompt
+
+      - name: Render PDF
+        run: quarto render --to pdf
+
+      - name: Commit rendered PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _book/*.pdf || true
+          git commit -m "Auto-update rendered PDF" || echo "No changes to commit"
+          git push
