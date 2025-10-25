@@ -1,0 +1,12 @@
+[build]
+  command = "quarto render"
+  publish = "_book"
+
+[build.environment]
+  QUARTO_VERSION = "1.5.57"
+
+[context.production.environment]
+  HUGO_VERSION = "0.111.3"
+
+[context.deploy-preview]
+  command = "quarto render"
