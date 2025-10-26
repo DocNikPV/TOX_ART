@@ -1,0 +1,20 @@
+% --- typography & layout ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\bfseries\Huge}
+  {\thechapter}
+  {20pt}
+  {\vspace{2cm}\centering}
+\titlespacing*{\chapter}{0pt}{0pt}{2cm}
+
+% --- caption styling ---
+\usepackage[font=small,labelfont=it,textfont=it,justification=centering]{caption}
+\captionsetup{skip=10pt}
+
+% --- image placement ---
+\usepackage{float}
+\floatplacement{figure}{H}
+
+% --- page layout ---
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{1.2em}
