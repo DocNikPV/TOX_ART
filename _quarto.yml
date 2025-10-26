@@ -14,23 +14,14 @@ book:
 
 format:
   pdf:
-    pdf-engine: pdflatex
-    documentclass: scrbook
-    papersize: a4
-    fontsize: 14pt
-    mainfont: "Latin Modern Roman"
+    documentclass: book
+    fontsize: 12pt
+    mainfont: "Libertinus Serif"
+    monofont: "Inconsolata"
     geometry:
-      - top=2.5cm
-      - bottom=2.5cm
-      - left=2.5cm
-      - right=2.5cm
+      - top=3cm
+      - bottom=3cm
+      - left=3cm
+      - right=3cm
     include-in-header: includes/preamble.tex
-    titlepage: true
-    titlepage-geometry: "top=4cm,bottom=3cm,left=3cm,right=3cm"
-    titlepage-rule-color: "gray"
-    titlepage-rule-height: 1
-    titlepage-footer: |
-      Haifa, 2025
-    toc: true
-    number-sections: true
-    colorlinks: true
+

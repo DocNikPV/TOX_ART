@@ -1,20 +1,32 @@
-% --- typography & layout ---
+% --- spacing and typography ---
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{1.2em}
+\linespread{1.1}
+
+% --- chapter heading style ---
 \usepackage{titlesec}
-\titleformat{\chapter}[display]
-  {\bfseries\Huge}
-  {\thechapter}
-  {20pt}
-  {\vspace{2cm}\centering}
-\titlespacing*{\chapter}{0pt}{0pt}{2cm}
+\titleformat{\chapter}[hang]
+  {\normalfont\huge\bfseries}
+  {\thechapter.}
+  {1em}
+  {}
+\titlespacing*{\chapter}{0pt}{-5pt}{20pt}
 
-% --- caption styling ---
-\usepackage[font=small,labelfont=it,textfont=it,justification=centering]{caption}
-\captionsetup{skip=10pt}
-
-% --- image placement ---
+% --- captions and figures ---
+\usepackage[font=small,it,labelfont=it,justification=centering]{caption}
 \usepackage{float}
 \floatplacement{figure}{H}
 
-% --- page layout ---
-\setlength{\parskip}{6pt}
-\setlength{\parindent}{1.2em}
+% --- header/footer ---
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\itshape Toxicology in Art}
+\fancyhead[R]{\itshape Nik Danilov}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
